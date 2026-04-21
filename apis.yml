@@ -1,12 +1,26 @@
 aid: big-lots
-url: 
+name: Big Lots
+description: >-
+  Big Lots is a discount retailer offering a wide assortment of brand-name
+  closeout merchandise including furniture, food, consumables, seasonal
+  products, soft home, hard home, and electronics. Big Lots operates hundreds
+  of stores across the United States.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Retail
+  - Discount
+  - Consumer Goods
+  - E-Commerce
+url: >-
   https://raw.githubusercontent.com/api-evangelist/big-lots/refs/heads/main/apis.yml
-modified: '2026-03-23'
+created: '2025-01-01'
+modified: '2026-04-19'
+specificationVersion: '0.19'
 apis: []
 common:
   - type: Website
-    url: https://www.big-lots.com
-description: >-
-  Big Lots is a discount retailer offering a wide assortment of brand-name closeout
-  merchandise including furniture, food, consumables, seasonal products, soft home,
-  hard home, and electronics.
+    url: https://www.biglots.com
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
