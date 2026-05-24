@@ -48,6 +48,8 @@ common:
         description: Understanding closeout retail purchasing and inventory management models.
       - name: Retail Market Analysis
         description: Analyzing discount retail sector trends and competitive positioning.
+  - type: LLMsTxt
+    url: https://biglots.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
