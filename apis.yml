@@ -23,6 +23,8 @@ modified: '2026-04-21'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/big-lots-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/big-lots
   - type: Website
