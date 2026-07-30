@@ -7,7 +7,18 @@ description: >-
   of stores across the United States. In 2024, Big Lots filed for bankruptcy
   and its brand and operations were acquired by Nexus Capital Management.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/big-lots.png
 tags:
   - Retail
   - Discount
