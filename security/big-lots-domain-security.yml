@@ -1,12 +1,12 @@
-generated: '2026-07-11'
+generated: '2026-09-17'
 method: probed
 source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
 hosts:
 - host: www.biglots.com
   https: true
   tls_version: TLSv1.3
-  cert_expires: Jul 19 18:10:16 2026 GMT
-  hsts: null
+  cert_expires: Nov 10 19:48:43 2026 GMT
+  hsts: false
 domains:
 - domain: biglots.com
   dnssec: false

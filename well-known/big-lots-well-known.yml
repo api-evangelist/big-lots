@@ -1,0 +1,88 @@
+generated: '2026-09-17'
+method: probed
+source: live GET of the named /.well-known/ path list on every host this record knows (biglots.com, www.biglots.com);
+  help.biglots.com, api.biglots.com and developer.biglots.com do not resolve (NXDOMAIN)
+hit_count: 0
+note: 'Every named discovery path returned HTTP 404 on https://biglots.com (a WordPress marketing site relaunched
+  in 2026 under Variety Wholesalers); www.biglots.com 301-redirects every path to the apex. The negative-control
+  path also returned 404, so these are true absences, not a catch-all. /llms.txt, which this record previously pointed
+  at, now returns 404 too. No WellKnown or SecurityTxt pointer is emitted: this file records an absence, not a served
+  surface.'
+hosts:
+- host: https://biglots.com
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /.well-known/big-lots-negative-control-9c1e4d.json
+    status: 404
+    control: true
+- host: https://www.biglots.com
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    redirect: https://biglots.com/.well-known/security.txt
+  - path: /.well-known/openid-configuration
+    status: 301
+    redirect: https://biglots.com/.well-known/openid-configuration
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    redirect: https://biglots.com/.well-known/oauth-authorization-server
+  - path: /.well-known/oauth-protected-resource
+    status: 301
+    redirect: https://biglots.com/.well-known/oauth-protected-resource
+  - path: /.well-known/api-catalog
+    status: 301
+    redirect: https://biglots.com/.well-known/api-catalog
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    redirect: https://biglots.com/.well-known/ai-plugin.json
+  - path: /.well-known/agent-card.json
+    status: 301
+    redirect: https://biglots.com/.well-known/agent-card.json
+  - path: /.well-known/agent.json
+    status: 301
+    redirect: https://biglots.com/.well-known/agent.json
+  - path: /.well-known/apis.json
+    status: 301
+    redirect: https://biglots.com/.well-known/apis.json
+  - path: /apis.json
+    status: 301
+    redirect: https://biglots.com/apis.json
+  - path: /apis.yml
+    status: 301
+    redirect: https://biglots.com/apis.yml
+  - path: /llms.txt
+    status: 301
+    redirect: https://biglots.com/llms.txt
+  - path: /.well-known/big-lots-negative-control-9c1e4d.json
+    status: 301
+    redirect: https://biglots.com/.well-known/big-lots-negative-control-9c1e4d.json
+    control: true
+- host: https://help.biglots.com
+  resolves: false
+  note: NXDOMAIN on 2026-09-17; the pre-bankruptcy Freshdesk help center is gone
+  documents: []

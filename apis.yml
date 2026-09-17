@@ -4,8 +4,12 @@ description: >-
   Big Lots is a discount retailer offering a wide assortment of brand-name
   closeout merchandise including furniture, food, consumables, seasonal
   products, soft home, hard home, and electronics. Big Lots operated hundreds
-  of stores across the United States. In 2024, Big Lots filed for bankruptcy
-  and its brand and operations were acquired by Nexus Capital Management.
+  of stores across the United States. Big Lots filed for Chapter 11 in
+  September 2024; a planned sale to Nexus Capital Management fell through, and
+  in January 2025 Gordon Brothers Retail Partners acquired the company's assets
+  and sold the Big Lots brand, up to 400 stores and distribution centers to
+  Variety Wholesalers, which relaunched biglots.com in 2026. Big Lots publishes
+  no developer program, API, SDK or machine-readable contract.
 type: Index
 deliveryModel:
   model: unknown
@@ -32,6 +36,14 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/big-lots.png
 tags:
   - Retail
+  - Discounts
+  - Consumer Goods
+  - E-Commerce
+  - Closeout
+  - Bankruptcy
+  - Fortune 500
+tags_raw:
+  - Retail
   - Discount
   - Consumer Goods
   - E-Commerce
@@ -41,7 +53,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/big-lots/refs/heads/main/apis.yml
 created: '2025-01-01'
-modified: '2026-04-21'
+modified: '2026-09-17'
 specificationVersion: '0.23'
 apis: []
 common:
@@ -73,8 +85,44 @@ common:
         description: Understanding closeout retail purchasing and inventory management models.
       - name: Retail Market Analysis
         description: Analyzing discount retail sector trends and competitive positioning.
-  - type: LlmsText
-    url: https://biglots.com/llms.txt
+  - type: PrivacyPolicy
+    url: https://biglots.com/privacy-policy/
+  - type: TermsOfService
+    url: https://biglots.com/terms-of-use/
+  - type: Support
+    url: https://biglots.com/faq/
+  - type: Contact
+    url: https://biglots.com/contact-us/
+  - type: About
+    url: https://biglots.com/about-us/
+  - type: Careers
+    url: https://biglots.com/jobs/
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Big Lots is a closeout discount retailer whose relaunched biglots.com is a WordPress
+    marketing site (weekly ad, store locator, departments) that 404s on every developer,
+    API, OpenAPI, agent-card and llms.txt path, blocks its own /wp-json/ index with a 403,
+    points vendors at Word-document routing guides on vwstores.com rather than an EDI or
+    supplier API, and api./developer./help.biglots.com no longer resolve.
+  evidence:
+    - url: https://biglots.com/developers
+      status: 404
+    - url: https://biglots.com/openapi.json
+      status: 404
+    - url: https://biglots.com/.well-known/agent-card.json
+      status: 404
+    - url: https://biglots.com/llms.txt
+      status: 404
+    - url: https://biglots.com/wp-json/
+      status: 403
+  checked: '2026-09-17'
+x-enrichment:
+  date: '2026-09-17'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v3
