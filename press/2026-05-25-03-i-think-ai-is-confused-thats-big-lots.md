@@ -1,7 +1,9 @@
 ---
 title: I think AI is confused - that's BIG LOTS🤦‍♀️🤦‍♀️
 url: https://www.facebook.com/groups/552120983463431/posts/1324936509515204/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Big Lots" press release artificial intelligence'
 position: 3
 source: serpapi-google

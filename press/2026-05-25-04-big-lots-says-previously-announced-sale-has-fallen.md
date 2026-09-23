@@ -1,7 +1,9 @@
 ---
 title: Big Lots Says Previously Announced Sale Has Fallen ...
 url: https://www.pymnts.com/news/retail/2024/big-lots-says-previously-announced-sale-has-fallen-through/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Big Lots" press release artificial intelligence'
 position: 4
 source: serpapi-google

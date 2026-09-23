@@ -1,7 +1,9 @@
 ---
 title: Big Lots, Inc. News and Press Releases
 url: https://www.prnewswire.com/news/big-lots%2C-inc./
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Big Lots" press release artificial intelligence'
 position: 1
 source: serpapi-google
